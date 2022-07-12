@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(36, 0, 61);
+  transition: 0.7s;
+  overflow-x: hidden;
+}
+
+.particles {
+  position: absolute;
+  top: 180px;
+}
+
+.particle-text {
+  position: relative;
+  top: 20px;
+  left: 50px;
+  color: #fff;
+  font-size: 100px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+blue {
+  /* text-shadow: -6px 5px 0px #a3c8ff; */
+  /* color: rgb(214, 214, 191); */
+  background: linear-gradient(90deg, rgba(0, 215, 255, 1) 10%, rgba(94, 23, 235, 1) 50%, rgba(255, 0, 160, 1) 100%);
+  font-weight: bolder;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 140px;
+}
+
+.particle-sub-text {
+  position: relative;
+  top: 10px;
+  left: 400px;
+  font-size: 30px;
+  font-style: italic;
+  color: rgb(107, 212, 212);
+}
+
+.particle-sub-text a {
+  background-color: rgb(242, 150, 12);
+  padding: 3px 5px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.line-1 {
+  position: relative;
+  top: 70px;
+  left: 30%;
+  color: white;
+  /* width: 16em; */
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-family: "Anonymous Pro", monospace;
+  font-size: 200%;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 1s infinite normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@media (min-width:1000px) {
+  img{
+   position: absolute;
+   left: 135% !important;
+   top: -150px !important;
+  }
+}
+
+@keyframes typewriter {
+
+  0%,
+  100% {
+    width: 0;
+  }
+
+  50%,
+  99% {
+    width: 16em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@media (max-width:800px) {
+  body {
+    font-size: 70% !important;
+    overflow-x: hidden !important;
+  }
+
+  blue {
+    font-size: 100px;
+  }
+
+  .particle-sub-text {
+    overflow-x: hidden;
+    width: fit-content;
+    font-size: 20px;
+    position: relative;
+    top: 20px;
+    left: 100px;
+  }
+
+  .particle-text {
+    position: relative;
+    left: 10px;
+    color: #fff;
+    font-size: 50px;
+  }
+
+  .line-1 {
+    overflow-x: hidden;
+    left: 10px;
+  }
+
+  .particles {
+    top: 100px;
+  }
+
+  img {
+    margin-top: 50px !important;
+  }
+}
